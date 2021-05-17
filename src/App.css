@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&display=swap');
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+body {
+  background-color: #252B42;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link:hover {
+  color: #2091F9 !important;
+  border: 2px solid #2091F9;
+  border-radius: 6px;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.nav {
+  background: #1e2336 !important;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.contact, .forms {
+  display: flex;
+  min-height: 200px;
+  padding-bottom: 2rem;
+}
+
+.text {
+  padding: 10px;
+}
+
+.contact h2 {
+  font-weight: bolder;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.widget {
+  width: 96%;
+  margin: 10px;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.widget2 {
+  width: 96%;
+  background: #2091F9;
+  margin: 10px;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.widget h4, p {
+  color: #000;
+}
+
+.btn {
+  background: #2091F9 !important;
+  border-radius: 2rem;
+}
+
+.Footer {
+  display: flex;
+  background: #000;
+  color: #fff;
+  padding: 1rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.container {
+  padding-top: 3rem;
+}
+
+.bi {
+  font-size: 25px;
+  margin: 10px;
+}
+
+.img-logo {
+  height: 45px;
+}
