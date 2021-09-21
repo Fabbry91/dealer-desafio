@@ -63,7 +63,7 @@ export const Cotents = () => {
 
     const validator = () => {
         if (!nombre.test(name)) {
-            SetError({ ...error, err: true, msg: 'Name no es valido', state: 'is-invalid' });
+            SetError({ ...error, err: true, msg: 'Nombre no es valido', state: 'is-invalid' });
             return false;
         } else if (!correo.test(email)) {
             SetError({ ...error, err: true, msg: 'Email no es valido', state: 'is-invalid' });
@@ -77,51 +77,79 @@ export const Cotents = () => {
     }
 
     return (
-        <>
-            <div className="row">
-                <div className="col-ms col-md contact">
-                    <div className="mx-auto">
-                        <h2 className="text-white">Contactanos.</h2>
-                        <p className="text-white">Por favor deje su información de contacto
-                        para <br /> brindarle toda la información que necesita.</p>
+        <div className="contents">
+
+            <div className="content">
+                <h2>Contactanos.</h2>
+                <p >Por favor deje su información de contacto
+                    para brindarle toda la información que necesita.</p>
+            </div>
+
+            <div className="container">
+                <div className="contactInfo">
+
+                    <div className="box">
+                        <div className="icon"><i class="bi bi-geo-alt-fill" /></div>
+                        <div className="text">
+                            <h3>Direccion</h3>
+                            <p>San Jose 4565 Guaymayen,<br />Mendoza CP 5505</p>
+                        </div>
                     </div>
+
+                    <div className="box">
+                        <div className="icon"><i class="bi bi-telephone-fill" /></div>
+                        <div className="text">
+                            <h3>Telefono</h3>
+                            <p>+54 9 261-4374332</p>
+                        </div>
+                    </div>
+
+                    <div className="box">
+                        <div className="icon"><i class="bi bi-envelope" /></div>
+                        <div className="text">
+                            <h3>Email</h3>
+                            <p>callefalsa@gmail.com</p>
+                        </div>
+                    </div>
+
                 </div>
-                <div className="col-ms col-md forms">
+
+                <div className="contactForm">
                     <form id="myform" className="mx-auto" autoComplete="off" onSubmit={Send}>
-                        <input
-                            className={`form-control mb-2`}
-                            type="text"
-                            placeholder="Nombre completo"
-                            name="name"
-                            value={name}
-                            onChange={onChange}
-                            onBlur={validator}
-                            onKeyUp={validator}
-                        />
-                        <input
-                            className="form-control mb-2"
-                            type="email"
-                            placeholder="Direccion e-mail"
-                            name="email"
-                            value={email}
-                            onChange={onChange}
-                            onBlur={validator}
-                            onKeyUp={validator} />
-
-                        <input
-                            className="form-control mb-2"
-                            type="text"
-                            placeholder="Telefono"
-                            name="phone"
-                            value={phone}
-                            onChange={onChange}
-                            onBlur={validator}
-                            onKeyUp={validator} />
-
+                        <h2>Envianos tus datos</h2>
+                        <div className="inputBox">
+                            <input
+                                type="text"
+                                name="name"
+                                value={name}
+                                onChange={onChange}
+                                onBlur={validator}
+                                onKeyUp={validator}
+                            />
+                            <span>Nombre completo</span>
+                        </div>
+                        <div className="inputBox">
+                            <input
+                                type="email"
+                                value={email}
+                                onChange={onChange}
+                                onBlur={validator}
+                                onKeyUp={validator} />
+                            <span>E-mail</span>
+                        </div>
+                        <div className="inputBox">
+                            <input
+                                type="text"
+                                value={phone}
+                                onChange={onChange}
+                                onBlur={validator}
+                                onKeyUp={validator} />
+                            <span>Telefono.</span>
+                        </div>
                         {!lodaing ?
-                            (<button type="submit" className="btn btn-primary mt-3" >Enviar</button>
+                            (<button type="submit" className="boton" >Enviar</button>
                             ) : (
-                                <button type="submit" className="btn btn-primary mt-3" disabled>Enviar</button>
+                                <button type="submit" className="boton" disabled>Enviar</button>
                             )
                         }
                         {
@@ -139,33 +167,7 @@ export const Cotents = () => {
                     </form>
                 </div>
             </div>
+        </div>
 
-            <div className="cards my-2">
-                <div className="row">
-                    <div className="col-md col-lg widget">
-                        <h4>Por que elegirnos.</h4>
-                        <p style={{ fontSize: 15 }}>Servicio de ventas las 24hs del día. <br />
-                        Experencia Certificada.<br />
-                        Precios Competitivos. <br />
-                        Más de 20 años de experencia.</p>
-                    </div>
-                    <div className="col-md col-lg widget2">
-                        <h4 className="text-white">Nuestras oficinas.</h4>
-                        <p className="text-white" style={{ fontSize: 15 }}>Dirección: San Martín 584 Mendoza.  <br />
-                       Telefono: (261) 12345678.<br />
-                       E-mail: phoneCel@email.com. <br />
-                        </p>
-                    </div>
-                    <div className="col-md col-lg widget">
-                        <h4>Horarios de comercio.</h4>
-                        <p style={{ fontSize: 15 }}>Lun a Vie: 9:00 - 17:00.  <br />
-                        Sabados: 10:00 - 13:00. <br />
-                        Domingo: Cerrado. <br />
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </>
     )
 }
