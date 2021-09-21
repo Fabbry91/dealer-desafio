@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/dealer-desafio/static/css/main.ddb07d41.chunk.css",
-    "main.js": "/dealer-desafio/static/js/main.13b02ca3.chunk.js",
-    "main.js.map": "/dealer-desafio/static/js/main.13b02ca3.chunk.js.map",
+    "main.css": "/dealer-desafio/static/css/main.86931819.chunk.css",
+    "main.js": "/dealer-desafio/static/js/main.da05ec77.chunk.js",
+    "main.js.map": "/dealer-desafio/static/js/main.da05ec77.chunk.js.map",
     "runtime-main.js": "/dealer-desafio/static/js/runtime-main.ef2c5e82.js",
     "runtime-main.js.map": "/dealer-desafio/static/js/runtime-main.ef2c5e82.js.map",
     "static/css/2.9267d1a8.chunk.css": "/dealer-desafio/static/css/2.9267d1a8.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.51e62993.chunk.js.map": "/dealer-desafio/static/js/3.51e62993.chunk.js.map",
     "index.html": "/dealer-desafio/index.html",
     "static/css/2.9267d1a8.chunk.css.map": "/dealer-desafio/static/css/2.9267d1a8.chunk.css.map",
-    "static/css/main.ddb07d41.chunk.css.map": "/dealer-desafio/static/css/main.ddb07d41.chunk.css.map",
+    "static/css/main.86931819.chunk.css.map": "/dealer-desafio/static/css/main.86931819.chunk.css.map",
     "static/js/2.557924ff.chunk.js.LICENSE.txt": "/dealer-desafio/static/js/2.557924ff.chunk.js.LICENSE.txt",
     "static/media/App.css": "/dealer-desafio/static/media/bootstrap-icons.dfd0ea12.woff2"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.ef2c5e82.js",
     "static/css/2.9267d1a8.chunk.css",
     "static/js/2.557924ff.chunk.js",
-    "static/css/main.ddb07d41.chunk.css",
-    "static/js/main.13b02ca3.chunk.js"
+    "static/css/main.86931819.chunk.css",
+    "static/js/main.da05ec77.chunk.js"
   ]
 }
